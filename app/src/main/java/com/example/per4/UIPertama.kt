@@ -31,7 +31,7 @@ fun ActivitasPertama(modifier : Modifier) {
     Column(modifier = Modifier.padding(top=100.dp)
         .fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally
-    ){
+        ){
         Text(stringResource(R.string.prodi),
             fontSize = 35.sp,
             fontWeight = FontWeight.Bold)
@@ -77,7 +77,7 @@ fun ActivitasPertama(modifier : Modifier) {
                 stringResource(R.string.copy),
                 modifier = Modifier
                     .align(Alignment.BottomCenter)
-                    .padding(bottom = 50.dp),
+                    .padding(bottom = 50.dp)
             )
         }
     }
