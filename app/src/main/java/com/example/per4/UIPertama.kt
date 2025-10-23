@@ -28,23 +28,30 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 fun ActivitasPertama(modifier : Modifier) {
-    Column(modifier = Modifier.padding(top=100.dp)
-        .fillMaxSize(),
+    Column(
+        modifier = Modifier.padding(top = 100.dp)
+            .fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally
-        ){
-        Text(stringResource(R.string.prodi),
+    ) {
+        Text(
+            stringResource(R.string.prodi),
             fontSize = 35.sp,
-            fontWeight = FontWeight.Bold)
-        Text(stringResource(R.string.Univ),
-            fontSize = 22.sp)
+            fontWeight = FontWeight.Bold
+        )
+        Text(
+            stringResource(R.string.Univ),
+            fontSize = 22.sp
+        )
         Spacer(modifier = Modifier.height(height = 25.dp))
-        Card(modifier = Modifier
-            .fillMaxWidth(1f)
-            .padding(12.dp),
+        Card(
+            modifier = Modifier
+                .fillMaxWidth(1f)
+                .padding(12.dp),
             colors = CardDefaults.cardColors(
                 containerColor = Color.DarkGray
-            )) {
-            Row(){
+            )
+        ) {
+            Row() {
                 val gambar = painterResource(id = R.drawable.logoumy)
                 Image(
                     painter = gambar,
@@ -52,19 +59,19 @@ fun ActivitasPertama(modifier : Modifier) {
                     modifier = Modifier.size(100.dp).padding(5.dp)
                 )
                 Spacer(modifier = Modifier.width(30.dp))
-                Column (){
+                Column() {
                     Text(
                         stringResource(R.string.nama),
                         fontSize = 30.sp,
                         fontFamily = FontFamily.Cursive,
                         color = Color.White,
-                        modifier = Modifier.padding(top =15.dp)
+                        modifier = Modifier.padding(top = 15.dp)
                     )
                     Text(
                         stringResource(R.string.alamat),
                         fontSize = 20.sp,
                         color = Color.Yellow,
-                        modifier = Modifier.padding(top =10.dp)
+                        modifier = Modifier.padding(top = 10.dp)
                     )
                 }
             }
