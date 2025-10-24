@@ -84,7 +84,9 @@ fun ActivitasPertama(modifier : Modifier) {
                 containerColor = Color.Blue
             )
         ) {
-            Row() {
+            Row(modifier = Modifier
+                .fillMaxWidth(),
+                verticalAlignment = Alignment.CenterVertically) {
                 val gambar = painterResource(id = R.drawable.logoumy)
                 Image(
                     painter = gambar,
@@ -99,6 +101,13 @@ fun ActivitasPertama(modifier : Modifier) {
                         fontFamily = FontFamily.Cursive,
                         color = Color.White,
                         modifier = Modifier.padding(top = 15.dp)
+                    )
+                    Text(
+                        stringResource(R.string.nohp),
+                        fontSize = 20.sp,
+                        fontFamily = FontFamily.Serif,
+                        color = Color(0xFF4FC3F7),
+                        modifier = Modifier.padding(top = 10.dp)
                     )
                     Text(
                         stringResource(R.string.alamat),
